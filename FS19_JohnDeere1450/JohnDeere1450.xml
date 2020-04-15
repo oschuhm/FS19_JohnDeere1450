@@ -46,7 +46,8 @@
 	
     <wheels>
         <wheelConfigurations>
-            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="FIRESTONE">
+            <!--<wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="FIRESTONE">-->
+			<wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="TRELLEBORG">
                 <wheels autoRotateBackSpeed="2.2">
                     <wheel filename="wheels/michelin/Frente.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
                         <physics tipOcclusionAreaGroupId="1" rotSpeed="0"  restLoad="1.7" repr="wheelFrontLeft"                           forcePointRatio="0.5" initialCompression="20" suspTravel="0.18" spring="39" damper="60" />
@@ -157,6 +158,7 @@
             <differentialConfiguration>
                 <differentials>
                     <differential torqueRatio="0.5" maxSpeedRatio="1.45" wheelIndex1="1" wheelIndex2="2"/>
+					<differential torqueRatio="0.5" maxSpeedRatio="1.45" wheelIndex1="3" wheelIndex2="4"/>
                     <differential torqueRatio="0.5" maxSpeedRatio="1.25" differentialIndex1="2" differentialIndex2="1"/>
                 </differentials>
             </differentialConfiguration>
