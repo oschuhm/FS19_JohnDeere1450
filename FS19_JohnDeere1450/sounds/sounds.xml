@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<sounds>
+	<motorStart template="HARVESTER_MOTOR_START" file="sounds/start.ogg" linkNode="0>"/>
+	<motorStop template="HARVESTER_MOTOR_STOP" file="sounds/stop.ogg" linkNode="0>"/>
+
+	<motor template="HARVESTER_MOTOR_IDLE" file="sounds/idle.ogg" linkNode="0>"/>
+	<motor template="HARVESTER_MOTOR_OFFLOAD_RUN" file="sounds/run.ogg" linkNode="0>"/>
+	<motor template="HARVESTER_MOTOR_ONLOAD_RUN" file="sounds/run_load.ogg" linkNode="0>"/>
+
+    <gearbox template="DEFAULT_GEARBOX" file="sounds/transmission_omega.ogg" linkNode="0>"/>
+    <retarder template="DEFAULT_RETARDER" file="sounds/module1.ogg" linkNode="0>"/>
+</sounds>

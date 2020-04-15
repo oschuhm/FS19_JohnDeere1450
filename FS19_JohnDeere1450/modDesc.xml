@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="44">
+    <author>BrunoNH</author>
+    <version>2.0</version>
+    <title>
+        <en>John Deere 1450</en>
+        <de>John Deere 1450</de>
+    </title>
+    <description>
+        <en>John Deere 1450</en>
+        <de>John Deere 1450</de>
+    </description>
+    <iconFilename>Store1450.dds</iconFilename>
+    <multiplayer supported="true"/>
+    <storeItems>
+        <storeItem xmlFilename="JohnDeere1450.xml" rootNode="vehicle"/>
+		<storeItem xmlFilename="PlataformaJD.xml" rootNode="vehicle" />
+		<storeItem xmlFilename="PMT9.xml" rootNode="vehicle" />
+    </storeItems>
+    <brands>
+        <brand name="TATU" title="Tatu" image="Tatu.dds"/>
+    </brands>
+</modDesc>

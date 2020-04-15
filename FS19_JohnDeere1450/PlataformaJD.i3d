@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="PlataformaJD" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="25" filename="$data/vehicles/newHolland/TX32Header/TX32Header_normal.png"/>
+    <File fileId="26" filename="$data/vehicles/newHolland/TX32Header/TX32Header_specular.png"/>
+    <File fileId="9" filename="Texturas1450/Plataforma/Aviso.dds"/>
+    <File fileId="10" filename="Texturas1450/Plataforma/Aviso1.dds"/>
+    <File fileId="16" filename="Texturas1450/Plataforma/Aviso3.dds"/>
+    <File fileId="18" filename="Texturas1450/Plataforma/Base.dds"/>
+    <File fileId="8" filename="Texturas1450/Plataforma/Fio.dds"/>
+    <File fileId="19" filename="Texturas1450/Plataforma/Lateral1.dds"/>
+    <File fileId="23" filename="Texturas1450/Plataforma/Master.dds"/>
+    <File fileId="17" filename="Texturas1450/Plataforma/Mola.dds"/>
+    <File fileId="12" filename="Texturas1450/Plataforma/Molinete319.dds"/>
+    <File fileId="15" filename="Texturas1450/Plataforma/Plataforma.dds"/>
+    <File fileId="21" filename="Texturas1450/Plataforma/bico.dds"/>
+    <File fileId="22" filename="Texturas1450/Plataforma/biquinho.dds"/>
+    <File fileId="11" filename="Texturas1450/Plataforma/braco1.dds"/>
+    <File fileId="2" filename="Texturas1450/Plataforma/braco2.dds"/>
+    <File fileId="13" filename="Texturas1450/Plataforma/dentesCompleteMap.dds"/>
+    <File fileId="20" filename="Texturas1450/Plataforma/lateral2.dds"/>
+    <File fileId="14" filename="Texturas1450/Plataforma/rosca.dds"/>
+    <File fileId="3" filename="Texturas1450/lata_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="leo__env_25_spec_" materialId="6">
+      <Texture fileId="9"/>
+    </Material>
+    <Material name="lambert1" materialId="7" diffuseColor="0 0 0 1">
+    </Material>
+    <Material name="lambert1" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="leo__env_25_spec_" materialId="5">
+      <Texture fileId="16"/>
+    </Material>
+    <Material name="01 - Default" materialId="18" customShaderId="4">
+      <Texture fileId="18"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="01 - Default" materialId="15" customShaderId="4">
+      <Texture fileId="20"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="01 - Default" materialId="9" customShaderId="4">
+      <Texture fileId="21"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="01 - Default" materialId="13" customShaderId="4">
+      <Texture fileId="17"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="leo__env_25_spec_" materialId="14">
+      <Texture fileId="23"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="01 - Default" materialId="22" customShaderId="4">
+      <Texture fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="default" materialId="16" emissiveColor="0 0 0 1" customShaderId="4">
+      <Texture fileId="15"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="01 - Default" materialId="11" customShaderId="4">
+      <Texture fileId="13"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="01 - Default" materialId="12" customShaderId="4">
+      <Texture fileId="22"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="01 - Default" materialId="17" customShaderId="4">
+      <Texture fileId="11"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="TX32Header_mat" materialId="24" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="25"/>
+      <Glossmap fileId="26"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8913 0.6121 0.0003 0"/>
+      <CustomParameter name="colorMat1" value="0.5054 0.0097 0 1"/>
+      <CustomParameter name="colorMat2" value="0.5054 0.0097 0 0"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="01 - Default" materialId="19" customShaderId="4">
+      <Texture fileId="14"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="01 - Default" materialId="8" customShaderId="4">
+      <Texture fileId="19"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="leo__env_25_spec_" materialId="10">
+      <Texture fileId="10"/>
+    </Material>
+    <Material name="molinete319" materialId="20" customShaderId="4">
+      <Texture fileId="12"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="01 - Default" materialId="21" customShaderId="4">
+      <Texture fileId="8"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="PlataformaJD.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="Plataforma_1450" dynamic="true" compound="true" collisionMask="67121154" density="0.13" clipDistance="300" nodeId="361" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+      <TransformGroup name="Plataforma" translation="0 0.028 -0.134427" rotation="-180 0 -180" scale="0.84 1.19 1.19" nodeId="362">
+        <TransformGroup name="transform" translation="-0.143 1.19521 0.532002" scale="1 1.06 1.06" nodeId="363">
+          <Shape shapeId="2" name="Braco2" translation="0 0 2.81298" nodeId="364" materialIds="22" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="3" name="Fio" translation="0.0355988 -0.0926822 -0.0824023" nodeId="365" materialIds="21" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="Fio" translation="0.0355988 -0.0926822 -0.143677" nodeId="366" materialIds="21" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="Aviso1" translation="0.526496 0.0919733 0.0276195" nodeId="367" materialIds="6"/>
+            <Shape shapeId="6" name="Aviso2" translation="1.248 0.216 0.0979509" nodeId="368" materialIds="10"/>
+          </Shape>
+          <Shape shapeId="7" name="Braco1" translation="0 0 -2.6182" nodeId="369" materialIds="17" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="8" name="Aviso1" translation="0.526225 0.0951005 -0.0342384" nodeId="370" materialIds="6"/>
+          </Shape>
+          <TransformGroup name="Molinete" translation="-1.23216 0.0360959 -1.48618" rotation="0 180 0" nodeId="371">
+            <Shape shapeId="9" name="Molinete319" clipDistance="300" nodeId="372" materialIds="20" castsShadows="true" receiveShadows="true">
+              <TransformGroup name="barradentes" nodeId="373">
+                <TransformGroup name="dentes" nodeId="374">
+                  <Shape shapeId="10" name="dent" nodeId="375" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="11" name="dent" nodeId="376" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="12" name="dent" nodeId="377" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="13" name="dent" nodeId="378" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="14" name="dent" nodeId="379" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="15" name="dent" nodeId="380" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="16" name="dent" nodeId="381" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="17" name="dent" nodeId="382" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="18" name="dent" nodeId="383" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="19" name="dent" nodeId="384" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="20" name="dent" nodeId="385" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="21" name="dent" nodeId="386" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="22" name="dent" nodeId="387" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="23" name="dent" nodeId="388" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="24" name="dent" nodeId="389" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="25" name="dent" nodeId="390" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="26" name="dent" nodeId="391" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="27" name="dent" nodeId="392" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="28" name="dent" nodeId="393" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="29" name="dent" nodeId="394" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+                <TransformGroup name="dentes" nodeId="395">
+                  <Shape shapeId="30" name="dent" nodeId="396" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="31" name="dent" nodeId="397" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="32" name="dent" nodeId="398" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="33" name="dent" nodeId="399" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="34" name="dent" nodeId="400" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="35" name="dent" nodeId="401" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="36" name="dent" nodeId="402" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="37" name="dent" nodeId="403" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="38" name="dent" nodeId="404" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="39" name="dent" nodeId="405" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="40" name="dent" nodeId="406" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="41" name="dent" nodeId="407" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="42" name="dent" nodeId="408" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="43" name="dent" nodeId="409" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="44" name="dent" nodeId="410" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="45" name="dent" nodeId="411" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="46" name="dent" nodeId="412" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="47" name="dent" nodeId="413" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="48" name="dent" nodeId="414" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="49" name="dent" nodeId="415" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+                <TransformGroup name="dentes" nodeId="416">
+                  <Shape shapeId="50" name="dent" nodeId="417" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="51" name="dent" nodeId="418" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="52" name="dent" nodeId="419" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="53" name="dent" nodeId="420" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="54" name="dent" nodeId="421" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="55" name="dent" nodeId="422" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="56" name="dent" nodeId="423" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="57" name="dent" nodeId="424" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="58" name="dent" nodeId="425" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="59" name="dent" nodeId="426" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="60" name="dent" nodeId="427" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="61" name="dent" nodeId="428" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="barradentes" nodeId="429">
+                <TransformGroup name="dentes" nodeId="430">
+                  <Shape shapeId="62" name="dent" nodeId="431" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="63" name="dent" nodeId="432" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="64" name="dent" nodeId="433" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="65" name="dent" nodeId="434" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="66" name="dent" nodeId="435" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="67" name="dent" nodeId="436" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="68" name="dent" nodeId="437" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="69" name="dent" nodeId="438" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="70" name="dent" nodeId="439" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="71" name="dent" nodeId="440" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="72" name="dent" nodeId="441" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="73" name="dent" nodeId="442" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="74" name="dent" nodeId="443" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="75" name="dent" nodeId="444" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="76" name="dent" nodeId="445" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="77" name="dent" nodeId="446" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="78" name="dent" nodeId="447" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="79" name="dent" nodeId="448" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="80" name="dent" nodeId="449" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="81" name="dent" nodeId="450" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+                <TransformGroup name="dentes" nodeId="451">
+                  <Shape shapeId="82" name="dent" nodeId="452" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="83" name="dent" nodeId="453" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="84" name="dent" nodeId="454" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="85" name="dent" nodeId="455" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="86" name="dent" nodeId="456" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="87" name="dent" nodeId="457" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="88" name="dent" nodeId="458" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="89" name="dent" nodeId="459" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="90" name="dent" nodeId="460" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="91" name="dent" nodeId="461" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="92" name="dent" nodeId="462" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="93" name="dent" nodeId="463" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="94" name="dent" nodeId="464" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="95" name="dent" nodeId="465" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="96" name="dent" nodeId="466" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="97" name="dent" nodeId="467" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="98" name="dent" nodeId="468" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="99" name="dent" nodeId="469" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="100" name="dent" nodeId="470" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="101" name="dent" nodeId="471" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+                <TransformGroup name="dentes" nodeId="472">
+                  <Shape shapeId="102" name="dent" nodeId="473" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="103" name="dent" nodeId="474" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="104" name="dent" nodeId="475" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="105" name="dent" nodeId="476" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="106" name="dent" nodeId="477" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="107" name="dent" nodeId="478" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="108" name="dent" nodeId="479" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="109" name="dent" nodeId="480" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="110" name="dent" nodeId="481" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="111" name="dent" nodeId="482" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="112" name="dent" nodeId="483" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="113" name="dent" nodeId="484" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="barradentes" nodeId="485">
+                <TransformGroup name="dentes" nodeId="486">
+                  <Shape shapeId="114" name="dent" nodeId="487" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="115" name="dent" nodeId="488" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="116" name="dent" nodeId="489" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="117" name="dent" nodeId="490" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="118" name="dent" nodeId="491" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="119" name="dent" nodeId="492" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="120" name="dent" nodeId="493" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="121" name="dent" nodeId="494" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="122" name="dent" nodeId="495" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="123" name="dent" nodeId="496" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="124" name="dent" nodeId="497" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="125" name="dent" nodeId="498" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="126" name="dent" nodeId="499" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="127" name="dent" nodeId="500" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="128" name="dent" nodeId="501" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="129" name="dent" nodeId="502" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="130" name="dent" nodeId="503" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="131" name="dent" nodeId="504" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="132" name="dent" nodeId="505" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="133" name="dent" nodeId="506" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+                <TransformGroup name="dentes" nodeId="507">
+                  <Shape shapeId="134" name="dent" nodeId="508" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="135" name="dent" nodeId="509" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="136" name="dent" nodeId="510" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="137" name="dent" nodeId="511" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="138" name="dent" nodeId="512" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="139" name="dent" nodeId="513" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="140" name="dent" nodeId="514" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="141" name="dent" nodeId="515" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="142" name="dent" nodeId="516" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="143" name="dent" nodeId="517" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="144" name="dent" nodeId="518" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="145" name="dent" nodeId="519" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="146" name="dent" nodeId="520" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="147" name="dent" nodeId="521" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="148" name="dent" nodeId="522" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="149" name="dent" nodeId="523" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="150" name="dent" nodeId="524" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="151" name="dent" nodeId="525" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="152" name="dent" nodeId="526" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="153" name="dent" nodeId="527" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+                <TransformGroup name="dentes" nodeId="528">
+                  <Shape shapeId="154" name="dent" nodeId="529" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="155" name="dent" nodeId="530" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="156" name="dent" nodeId="531" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="157" name="dent" nodeId="532" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="158" name="dent" nodeId="533" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="159" name="dent" nodeId="534" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="160" name="dent" nodeId="535" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="161" name="dent" nodeId="536" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="162" name="dent" nodeId="537" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="163" name="dent" nodeId="538" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="164" name="dent" nodeId="539" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="165" name="dent" nodeId="540" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="barradentes" nodeId="541">
+                <TransformGroup name="dentes" nodeId="542">
+                  <Shape shapeId="166" name="dent" nodeId="543" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="167" name="dent" nodeId="544" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="168" name="dent" nodeId="545" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="169" name="dent" nodeId="546" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="170" name="dent" nodeId="547" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="171" name="dent" nodeId="548" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="172" name="dent" nodeId="549" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="173" name="dent" nodeId="550" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="174" name="dent" nodeId="551" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="175" name="dent" nodeId="552" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="176" name="dent" nodeId="553" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="177" name="dent" nodeId="554" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="178" name="dent" nodeId="555" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="179" name="dent" nodeId="556" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="180" name="dent" nodeId="557" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="181" name="dent" nodeId="558" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="182" name="dent" nodeId="559" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="183" name="dent" nodeId="560" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="184" name="dent" nodeId="561" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="185" name="dent" nodeId="562" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+                <TransformGroup name="dentes" nodeId="563">
+                  <Shape shapeId="186" name="dent" nodeId="564" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="187" name="dent" nodeId="565" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="188" name="dent" nodeId="566" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="189" name="dent" nodeId="567" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="190" name="dent" nodeId="568" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="191" name="dent" nodeId="569" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="192" name="dent" nodeId="570" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="193" name="dent" nodeId="571" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="194" name="dent" nodeId="572" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="195" name="dent" nodeId="573" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="196" name="dent" nodeId="574" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="197" name="dent" nodeId="575" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="198" name="dent" nodeId="576" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="199" name="dent" nodeId="577" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="200" name="dent" nodeId="578" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="201" name="dent" nodeId="579" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="202" name="dent" nodeId="580" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="203" name="dent" nodeId="581" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="204" name="dent" nodeId="582" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="205" name="dent" nodeId="583" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+                <TransformGroup name="dentes" nodeId="584">
+                  <Shape shapeId="206" name="dent" nodeId="585" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="207" name="dent" nodeId="586" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="208" name="dent" nodeId="587" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="209" name="dent" nodeId="588" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="210" name="dent" nodeId="589" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="211" name="dent" nodeId="590" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="212" name="dent" nodeId="591" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="213" name="dent" nodeId="592" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="214" name="dent" nodeId="593" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="215" name="dent" nodeId="594" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="216" name="dent" nodeId="595" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="217" name="dent" nodeId="596" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="barradentes" nodeId="597">
+                <TransformGroup name="dentes" nodeId="598">
+                  <Shape shapeId="218" name="dent" nodeId="599" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="219" name="dent" nodeId="600" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="220" name="dent" nodeId="601" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="221" name="dent" nodeId="602" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="222" name="dent" nodeId="603" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="223" name="dent" nodeId="604" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="224" name="dent" nodeId="605" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="225" name="dent" nodeId="606" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="226" name="dent" nodeId="607" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="227" name="dent" nodeId="608" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="228" name="dent" nodeId="609" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="229" name="dent" nodeId="610" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="230" name="dent" nodeId="611" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="231" name="dent" nodeId="612" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="232" name="dent" nodeId="613" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="233" name="dent" nodeId="614" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="234" name="dent" nodeId="615" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="235" name="dent" nodeId="616" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="236" name="dent" nodeId="617" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="237" name="dent" nodeId="618" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+                <TransformGroup name="dentes" nodeId="619">
+                  <Shape shapeId="238" name="dent" nodeId="620" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="239" name="dent" nodeId="621" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="240" name="dent" nodeId="622" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="241" name="dent" nodeId="623" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="242" name="dent" nodeId="624" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="243" name="dent" nodeId="625" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="244" name="dent" nodeId="626" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="245" name="dent" nodeId="627" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="246" name="dent" nodeId="628" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="247" name="dent" nodeId="629" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="248" name="dent" nodeId="630" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="249" name="dent" nodeId="631" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="250" name="dent" nodeId="632" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="251" name="dent" nodeId="633" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="252" name="dent" nodeId="634" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="253" name="dent" nodeId="635" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="254" name="dent" nodeId="636" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="255" name="dent" nodeId="637" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="256" name="dent" nodeId="638" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="257" name="dent" nodeId="639" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+                <TransformGroup name="dentes" nodeId="640">
+                  <Shape shapeId="258" name="dent" nodeId="641" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="259" name="dent" nodeId="642" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="260" name="dent" nodeId="643" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="261" name="dent" nodeId="644" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="262" name="dent" nodeId="645" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="263" name="dent" nodeId="646" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="264" name="dent" nodeId="647" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="265" name="dent" nodeId="648" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="266" name="dent" nodeId="649" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="267" name="dent" nodeId="650" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="268" name="dent" nodeId="651" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="269" name="dent" nodeId="652" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="barradentes" nodeId="653">
+                <TransformGroup name="dentes" nodeId="654">
+                  <Shape shapeId="270" name="dent" nodeId="655" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="271" name="dent" nodeId="656" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="272" name="dent" nodeId="657" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="273" name="dent" nodeId="658" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="274" name="dent" nodeId="659" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="275" name="dent" nodeId="660" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="276" name="dent" nodeId="661" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="277" name="dent" nodeId="662" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="278" name="dent" nodeId="663" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="279" name="dent" nodeId="664" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="280" name="dent" nodeId="665" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="281" name="dent" nodeId="666" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="282" name="dent" nodeId="667" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="283" name="dent" nodeId="668" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="284" name="dent" nodeId="669" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="285" name="dent" nodeId="670" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="286" name="dent" nodeId="671" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="287" name="dent" nodeId="672" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="288" name="dent" nodeId="673" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="289" name="dent" nodeId="674" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+                <TransformGroup name="dentes" nodeId="675">
+                  <Shape shapeId="290" name="dent" nodeId="676" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="291" name="dent" nodeId="677" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="292" name="dent" nodeId="678" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="293" name="dent" nodeId="679" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="294" name="dent" nodeId="680" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="295" name="dent" nodeId="681" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="296" name="dent" nodeId="682" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="297" name="dent" nodeId="683" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="298" name="dent" nodeId="684" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="299" name="dent" nodeId="685" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="300" name="dent" nodeId="686" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="301" name="dent" nodeId="687" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="302" name="dent" nodeId="688" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="303" name="dent" nodeId="689" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="304" name="dent" nodeId="690" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="305" name="dent" nodeId="691" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="306" name="dent" nodeId="692" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="307" name="dent" nodeId="693" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="308" name="dent" nodeId="694" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="309" name="dent" nodeId="695" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+                <TransformGroup name="dentes" nodeId="696">
+                  <Shape shapeId="310" name="dent" nodeId="697" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="311" name="dent" nodeId="698" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="312" name="dent" nodeId="699" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="313" name="dent" nodeId="700" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="314" name="dent" nodeId="701" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="315" name="dent" nodeId="702" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="316" name="dent" nodeId="703" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="317" name="dent" nodeId="704" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="318" name="dent" nodeId="705" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="319" name="dent" nodeId="706" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="320" name="dent" nodeId="707" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="321" name="dent" nodeId="708" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+              </TransformGroup>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="Hidraulicos" translation="4.10857 0.48 -0.449" rotation="-3.453 0 0" scale="1 0.8 1" nodeId="709"/>
+        <Shape shapeId="322" name="Rolo" translation="0.0477099 0.499347 0" scale="1.35 1 1" nodeId="710" materialIds="19" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="transform" translation="-0.119 0.201696 -0.068595" rotation="0 90 0" scale="1 1 1.25" nodeId="711">
+          <Shape shapeId="323" name="Plataforma" nodeId="712" materialIds="16" castsShadows="true" receiveShadows="true" distanceBlending="false">
+            <Shape shapeId="324" name="Aviso1" translation="-0.585 0.536078 2.71926" rotation="0 -2.16333e-07 88.781" scale="1 0.5 1.2" nodeId="713" materialIds="6"/>
+            <Shape shapeId="324" name="Aviso2" translation="-0.581 0.745 2.71" rotation="0 -1.30086e-07 88.781" scale="0.6 0.5 1.1" nodeId="714" materialIds="10"/>
+            <Shape shapeId="324" name="Aviso2" translation="-0.582431 0.694459 -2.24545" rotation="0 -90 90" scale="1.3 0.5 1.2" nodeId="715" materialIds="10"/>
+            <Shape shapeId="324" name="Aviso1" translation="-0.581461 0.708403 -2.43156" rotation="0 -2.16333e-07 88.781" scale="1 0.5 1.2" nodeId="716" materialIds="6"/>
+            <Shape shapeId="324" name="Baldan" translation="-0.584083 0.518724 -2.27344" rotation="89.1902 -90 0" scale="1.5 0.5 1.7" nodeId="717" materialIds="5"/>
+            <Shape shapeId="325" name="Mola" translation="0.361677 0.36431 2.90757" nodeId="718" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="325" name="Mola" translation="0.368143 0.316036 2.93221" rotation="0 -0 10.916" scale="1.2 1.6 1.2" nodeId="719" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="325" name="Mola" translation="0.376484 0.316458 -2.71542" rotation="0 -0 14.5873" scale="1.2 1.6 1.2" nodeId="720" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="325" name="Mola" translation="0.36686 0.366538 -2.68647" rotation="0 -0 -0.273397" scale="1.2 1 1.2" nodeId="721" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <Shape shapeId="326" name="Facas" translation="0.0764463 -0.141907 0.120115" nodeId="722" materialIds="18" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="327" name="Lateral2" translation="0.0172415 0.609729 2.8904" nodeId="723" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="328" name="Lateral1" translation="-0.243 0.495 -2.713" nodeId="724" materialIds="15" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="329" name="Bico1" translation="0.574548 0.537 2.86193" scale="1 0.95 1" nodeId="725" materialIds="9" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="330" name="Biquinho" translation="0.593234 -0.655543 0.0222091" rotation="0 -0 0.272615" scale="1 1.3 1" nodeId="726" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <Shape shapeId="329" name="Bico2" translation="0.574548 0.537 -2.69684" scale="1 0.95 1" nodeId="727" materialIds="9" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="330" name="Biquinho" translation="0.602765 -0.659256 -0.00507212" scale="1 1.3 1" nodeId="728" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <Shape shapeId="324" name="Master" translation="-0.320999 0.348664 2.94038" rotation="89.8766 -0.012 -5.6759" scale="2 0.5 2" nodeId="731" materialIds="14"/>
+          <Shape shapeId="324" name="Master" translation="-0.295055 0.359195 -2.77805" rotation="89.8691 180 -5.71948" scale="2 0.5 2" nodeId="732" materialIds="14"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="attacherJoint" translation="9.2649e-09 1.30917 -0.750528" rotation="-90 -83.783 90" nodeId="733"/>
+      <TransformGroup name="workAreaStart" translation="2.854 0 1.4" nodeId="734"/>
+      <TransformGroup name="workAreaWidth" translation="-2.854 0 1.4" nodeId="735"/>
+      <TransformGroup name="workAreaHeight" translation="2.854 0 1.4" nodeId="736"/>
+      <TransformGroup name="aiLeftMarker" translation="2.854 0 1.4" nodeId="737"/>
+      <TransformGroup name="aiRightMarker" translation="-2.854 0 1.4" nodeId="738"/>
+      <TransformGroup name="pto" translation="2.90803 0.5286 -0.796975" rotation="0 -90 0" nodeId="739"/>
+      <TransformGroup name="testAreas" translation="4.44089e-18 0.0005 -0.150933" scale="0.8 1 1" nodeId="740">
+        <TransformGroup name="testArea1" translation="2.86079 -2.10096e-05 -1.5966e-05" nodeId="741">
+          <TransformGroup name="testAreaWidth1" translation="-0.989855 2.4869e-16 -0.000393051" nodeId="742"/>
+          <TransformGroup name="testAreaHeight1" translation="-0.000155818 -2.4869e-16 1.2939" nodeId="743"/>
+        </TransformGroup>
+        <TransformGroup name="testArea2" translation="2.49971 -2.10096e-05 -0.185341" nodeId="744">
+          <TransformGroup name="testAreaWidth1" translation="-0.94 -1.06581e-16 -0.000393051" nodeId="745"/>
+          <TransformGroup name="testAreaHeight1" translation="-0.000159808 -2.4869e-16 1.2939" nodeId="746"/>
+        </TransformGroup>
+        <TransformGroup name="testArea3" translation="1.84572 -2.10096e-05 -0.185341" nodeId="747">
+          <TransformGroup name="testAreaWidth1" translation="-0.94 2.4869e-16 -0.000393051" nodeId="748"/>
+          <TransformGroup name="testAreaHeight1" translation="-0.000159808 -1.06581e-16 1.2939" nodeId="749"/>
+        </TransformGroup>
+        <TransformGroup name="testArea4" translation="0.90572 -2.10096e-05 -0.185341" nodeId="750">
+          <TransformGroup name="testAreaWidth1" translation="-0.94 1.06581e-16 -0.000393051" nodeId="751"/>
+          <TransformGroup name="testAreaHeight1" translation="-0.000159808 -5.32907e-16 1.2939" nodeId="752"/>
+        </TransformGroup>
+        <TransformGroup name="testArea5" translation="-0.0342802 -2.10096e-05 -0.185341" nodeId="753">
+          <TransformGroup name="testAreaWidth1" translation="-0.94 -1.06581e-16 -0.000393051" nodeId="754"/>
+          <TransformGroup name="testAreaHeight1" translation="-0.000159808 -2.4869e-16 1.2939" nodeId="755"/>
+        </TransformGroup>
+        <TransformGroup name="testArea6" translation="-0.97428 -2.10096e-05 -0.185341" nodeId="756">
+          <TransformGroup name="testAreaWidth1" translation="-0.94 3.19744e-16 -0.000393051" nodeId="757"/>
+          <TransformGroup name="testAreaHeight1" translation="-0.000159808 3.55271e-17 1.2939" nodeId="758"/>
+        </TransformGroup>
+        <TransformGroup name="testArea7" translation="-1.91428 -2.10096e-05 -0.185341" nodeId="759">
+          <TransformGroup name="testAreaWidth1" translation="-0.94 -3.19744e-16 -0.000393051" nodeId="760"/>
+          <TransformGroup name="testAreaHeight1" translation="-0.000159808 -3.90799e-16 1.2939" nodeId="761"/>
+        </TransformGroup>
+        <TransformGroup name="testArea8" translation="-2.85428 -2.10096e-05 -0.185341" nodeId="762">
+          <TransformGroup name="testAreaWidth1" translation="-0.629008 3.57353e-17 -0.000393051" nodeId="763"/>
+          <TransformGroup name="testAreaHeight1" translation="-0.000159808 1.77636e-16 1.2939" nodeId="764"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="aiBackMarker" translation="0 0 -0.75" nodeId="765"/>
+      <TransformGroup name="effectNodes" translation="2.22045e-18 -3.55271e-17 0" nodeId="766">
+        <TransformGroup name="center" translation="-8.26371e-18 -0.3 0.35" rotation="0 -90 0" nodeId="767"/>
+        <TransformGroup name="left" translation="2.725 0.5 -2.26" rotation="90 0 -90" nodeId="768"/>
+        <TransformGroup name="right" translation="-2.725 0.5 -2.26" rotation="90 0 90" nodeId="769"/>
+      </TransformGroup>
+      <Shape shapeId="331" name="AiCollisionTrigger" translation="0 1.904 1.24048" visibility="false" kinematic="true" compound="true" trigger="true" collisionMask="1056768" nodeId="770" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <TransformGroup name="groundReference" translation="0 0.185883 0.55301" nodeId="771"/>
+      <TransformGroup name="connectionHoses" translation="0.139079 0.351812 0.174522" rotation="0 2.14875 0" nodeId="772">
+        <TransformGroup name="hydraulic02_in" translation="1.026 1.02246 -0.982372" rotation="-176.593 -0.489036 179.971" nodeId="773">
+          <Shape shapeId="332" name="hydraulic02_in_cover_vis" translation="-0.011903 0.000883387 -0.0248713" rotation="-176.593 0.489902 180" clipDistance="300" nodeId="774" materialIds="24" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="333" name="hydraulic02_in_cover" translation="-0.00995364 -0.00698248 -0.0229776" rotation="-176.593 0.489902 180" clipDistance="300" nodeId="775" materialIds="24" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="hydraulic01_out" translation="1.08918 1.0225 -0.981794" rotation="-176.593 -0.489036 179.971" nodeId="776">
+          <Shape shapeId="334" name="hydraulic02_in_cover_vis" translation="-0.011903 0.000883387 -0.0248713" rotation="-176.593 0.489902 180" clipDistance="300" nodeId="777" materialIds="24" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="333" name="hydraulic01_out_cover" translation="-0.01 -0.00698248 -0.0229776" rotation="-176.593 0.489902 180" clipDistance="300" nodeId="778" materialIds="24" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="hydraulic01_in" translation="1.157 1.02274 -0.977738" rotation="-176.593 -0.489036 179.971" nodeId="779">
+          <Shape shapeId="334" name="hydraulic02_in_cover_vis" translation="-0.011903 0.000883387 -0.0248713" rotation="-176.593 0.489902 180" clipDistance="300" nodeId="780" materialIds="24" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="333" name="hydraulic01_in_cover" translation="-0.00995364 -0.00698248 -0.0229776" rotation="-176.593 0.489902 180" clipDistance="300" nodeId="781" materialIds="24" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+</i3D>

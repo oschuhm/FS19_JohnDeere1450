@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="R38_TM700" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="10" filename="$data/shared/wheels/michelin/axioBib/axioBib_normal.png"/>
+    <File fileId="11" filename="$data/shared/wheels/michelin/axioBib/axioBib_specular.png"/>
+    <File fileId="2" filename="firestone_normal.dds"/>
+    <File fileId="3" filename="firestone_specullar.dds"/>
+    <File fileId="8" filename="wheels_normal.dds"/>
+    <File fileId="9" filename="wheels_specullar.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="firestone_mat" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="4" customShaderVariation="tirePressureDeformation">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+      <CustomParameter name="morphPosition" value="-0.8 -1.4 0.5 0.1"/>
+    </Material>
+    <Material name="wheels_s700" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="axioBib_mat4" materialId="6" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="4" customShaderVariation="tirePressureDeformation">
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+      <CustomParameter name="RDT" value="1 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.27 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+      <CustomParameter name="morphPosition" value="-0.519 -1.036 0.5 0.05"/>
+    </Material>
+    <Material name="axioBib_mat" materialId="7" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="4" customShaderVariation="tirePressureDeformation">
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+      <CustomParameter name="RDT" value="1 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.27 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+      <CustomParameter name="morphPosition" value="-0.517 -0.911 0.5 0.05"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Roda.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="Firestone_F" nodeId="19">
+      <Shape shapeId="1" name="firestone_800_70R38" clipDistance="1000" nodeId="20" materialIds="5" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="Roda_E" clipDistance="1000" nodeId="21" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="3" name="Roda_D" clipDistance="1000" nodeId="22" materialIds="4" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="Firestone_T" nodeId="23">
+      <Shape shapeId="4" name="firestone_Pneu" clipDistance="1000" nodeId="24" materialIds="5" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="5" name="RodaT_E" clipDistance="1000" nodeId="25" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="6" name="RodaT_D" clipDistance="1000" nodeId="26" materialIds="4" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="Michelin_F" nodeId="27">
+      <Shape shapeId="7" name="michelin" scale="1.4 1.2 1.2" clipDistance="300" nodeId="28" materialIds="6" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="8" name="Roda_E" clipDistance="1000" nodeId="29" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="9" name="Roda_D" clipDistance="1000" nodeId="30" materialIds="4" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="Michelin_T" nodeId="31">
+      <Shape shapeId="10" name="michelin" clipDistance="300" nodeId="32" materialIds="7" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="5" name="RodaT_E" clipDistance="1000" nodeId="33" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="6" name="RodaT_D" clipDistance="1000" nodeId="34" materialIds="4" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <Camera name="persp" translation="2.93032 0.590704 2.09775" rotation="-3.97666 52.8286 9.18489e-06" visibility="false" nodeId="35" fov="60" nearClip="0.1" farClip="1000" orthographicHeight="1"/>
+    <Light name="light" rotation="-40 0 -30" nodeId="36" type="directional" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" numShadowMapSplits="3" shadowMapSplitDistance0="16.5466" shadowMapSplitDistance1="35.9759" shadowMapSplitDistance2="80" shadowMapSplitDistance3="80" decayRate="4" range="500"/>
+  </Scene>
+
+</i3D>

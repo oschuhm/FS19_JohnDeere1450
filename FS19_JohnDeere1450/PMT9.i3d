@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Fortschritt Maizecutter" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="13" filename="Texturas1450/PlataformaMilho/BicoCompleteMap.dds"/>
+    <File fileId="15" filename="Texturas1450/PlataformaMilho/BicoPonta2CompleteMap.dds"/>
+    <File fileId="14" filename="Texturas1450/PlataformaMilho/BicoPontaCompleteMap.dds"/>
+    <File fileId="2" filename="Texturas1450/PlataformaMilho/CapaCompleteMap.dds"/>
+    <File fileId="16" filename="Texturas1450/PlataformaMilho/ChasisCompleteMap.dds"/>
+    <File fileId="9" filename="Texturas1450/PlataformaMilho/EspigadeiraCompleteMap.dds"/>
+    <File fileId="11" filename="Texturas1450/PlataformaMilho/PMT-A.dds"/>
+    <File fileId="12" filename="Texturas1450/PlataformaMilho/PMT.dds"/>
+    <File fileId="8" filename="Texturas1450/PlataformaMilho/ProtecaoCompleteMap.dds"/>
+    <File fileId="10" filename="Texturas1450/PlataformaMilho/Tatu.dds"/>
+    <File fileId="3" filename="Texturas1450/lata_specular.dds"/>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="01 - Default" materialId="6">
+      <Texture fileId="15"/>
+    </Material>
+    <Material name="leo__env_25_spec_" materialId="7">
+      <Texture fileId="10"/>
+    </Material>
+    <Material name="leo__env_25_spec_" materialId="4">
+      <Texture fileId="12"/>
+    </Material>
+    <Material name="01 - Default" materialId="13" customShaderId="4">
+      <Texture fileId="8"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="01 - Default" materialId="17" diffuseColor="0.0431373 0.0431373 0.0431373 1" customShaderId="4">
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="lambert1" materialId="12" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="4">
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="01 - Default" materialId="9" customShaderId="4">
+      <Texture fileId="13"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="02 - Default" materialId="16" customShaderId="4">
+      <Texture fileId="9"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="01 - Default" materialId="14" customShaderId="4">
+      <Texture fileId="16"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="leo__env_25_spec_" materialId="10">
+      <Texture fileId="11"/>
+    </Material>
+    <Material name="default" materialId="8" emissiveColor="0 0 0 1" customShaderId="4">
+      <Texture fileId="16"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="01 - Default" materialId="15" customShaderId="4">
+      <Texture fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="01 - Default" materialId="11" customShaderId="4">
+      <Texture fileId="14"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="PMT9.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="TATU_9linhas" dynamic="true" compound="true" collisionMask="67121154" density="0.2" clipDistance="300" nodeId="33" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true">
+      <TransformGroup name="attacherJoint" translation="-0.018411 1.12348 -0.969318" rotation="4.23396e-11 -90 0" nodeId="34"/>
+      <TransformGroup name="workAreaStart" translation="2.08 -0.0621118 0.944423" nodeId="35"/>
+      <TransformGroup name="workAreaWidth" translation="-2.08 -0.0621118 0.944423" nodeId="36"/>
+      <TransformGroup name="workAreaHeight" translation="2.08 -0.0621118 0.944423" nodeId="37"/>
+      <TransformGroup name="aiMarkerLeft" translation="2.08 -0.0621118 0.944423" nodeId="38"/>
+      <TransformGroup name="aiMarkerRight" translation="-2.08 -0.0621118 0.944423" nodeId="39"/>
+      <TransformGroup name="pto" translation="1.43767 0.652025 -1.12051" rotation="0 90 0" nodeId="40"/>
+      <TransformGroup name="Plataforma" translation="0.00200004 0.478039 -1.00355" rotation="0 -90 0" scale="0.52 0.52 0.52" nodeId="41">
+        <TransformGroup name="Outros" nodeId="42">
+          <Shape shapeId="2" name="Protecao" translation="1.27735 -0.309119 4.80904" nodeId="43" materialIds="15" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="Protecao" translation="1.25643 -0.310086 -4.43405" nodeId="44" materialIds="13" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="Espigadeiras" nodeId="45">
+          <Shape shapeId="4" name="Espigadeira" translation="1.0665 -0.55185 -3.43595" rotation="180 -3.62111e-06 171.596" scale="0.88 0.85 0.9" nodeId="46" materialIds="16" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="4" name="Espigadeira" translation="1.0665 -0.55185 -2.47394" rotation="180 -3.62111e-06 171.596" scale="0.88 0.85 0.9" nodeId="47" materialIds="16" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="4" name="Espigadeira" translation="1.0665 -0.55185 -1.51807" rotation="180 -3.62111e-06 171.596" scale="0.88 0.85 0.9" nodeId="48" materialIds="16" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="4" name="Espigadeira" translation="1.0665 -0.55185 -0.551372" rotation="180 -3.62111e-06 171.596" scale="0.88 0.85 0.9" nodeId="49" materialIds="16" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="4" name="Espigadeira" translation="1.0665 -0.55185 0.409593" rotation="180 -3.62111e-06 171.596" scale="0.88 0.85 0.9" nodeId="50" materialIds="16" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="4" name="Espigadeira" translation="1.0665 -0.55185 1.3665" rotation="180 -3.62111e-06 171.596" scale="0.88 0.85 0.9" nodeId="51" materialIds="16" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="4" name="Espigadeira" translation="1.0665 -0.55185 2.35345" rotation="180 -3.62111e-06 171.596" scale="0.88 0.85 0.9" nodeId="52" materialIds="16" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="4" name="Espigadeira" translation="1.0665 -0.55185 3.37683" rotation="180 -3.62111e-06 171.596" scale="0.88 0.85 0.9" nodeId="53" materialIds="16" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="Adesivos" nodeId="54">
+          <Shape shapeId="5" name="TATU MARCHESAN" translation="0.516873 0.736684 -4.76759" rotation="90 180 0" scale="1.5 1 1.89" nodeId="55" materialIds="7"/>
+          <Shape shapeId="5" name="PMT-A" translation="3.54418 -0.487083 -4.44536" rotation="90 180 -2.14353e-05" scale="0.9 1 0.9" nodeId="56" materialIds="10"/>
+          <Shape shapeId="5" name="TATU MARCHESAN" translation="0.516873 1.00873 -2.80474" rotation="90 90 0" scale="1.8 1 2" nodeId="57" materialIds="7"/>
+          <Shape shapeId="5" name="PMT" translation="0.19113 0.92747 2.76883" rotation="-90 90 -180" scale="1.7 1 1.8" nodeId="58" materialIds="4"/>
+          <Shape shapeId="5" name="PMT-A" translation="3.54418 -0.487084 4.42413" rotation="90 0 -2.14353e-05" scale="0.9 1 0.9" nodeId="59" materialIds="10"/>
+          <Shape shapeId="5" name="TATU MARCHESAN" translation="0.516873 0.736684 4.74147" rotation="90 0 0" scale="1.5 1 1.89" nodeId="60" materialIds="7"/>
+        </TransformGroup>
+        <TransformGroup name="Bicos" nodeId="61">
+          <Shape shapeId="6" name="Bico" translation="1.08449 -0.376436 3.3751" nodeId="62" materialIds="9" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="7" name="Bico Ponta" translation="0.376139 1.47927 -4.21032" nodeId="63" materialIds="11" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="Bico" translation="1.08449 -0.376436 2.36393" nodeId="64" materialIds="9" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="Bico" translation="1.08449 -0.376436 1.36784" nodeId="65" materialIds="9" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="Bico" translation="1.08449 -0.376436 0.410076" nodeId="66" materialIds="9" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="Bico" translation="1.08449 -0.376436 -0.553666" nodeId="67" materialIds="9" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="Bico" translation="1.08449 -0.376436 -1.51414" nodeId="68" materialIds="9" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="Bico" translation="1.08449 -0.376436 -2.47555" nodeId="69" materialIds="9" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="Bico" translation="1.08449 -0.376436 -3.4332" nodeId="70" materialIds="9" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="8" name="Bico Ponta" translation="1.52028 0.589392 4.17783" nodeId="71" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <Shape shapeId="9" name="Chassi PMT" visibility="false" nodeId="72" materialIds="14" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="Chassi_PMT" rotation="-90 -0 0" nodeId="73" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+      </TransformGroup>
+      <Shape shapeId="11" name="aiCollisionTrigger" translation="0 -7.39644e-08 0.641079" visibility="false" kinematic="true" compound="true" trigger="true" collisionMask="1056768" nodeId="74" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <TransformGroup name="testAreas" translation="2.25 -0.0621118 1.86126" nodeId="75">
+        <TransformGroup name="testAreaStart2" translation="-0.0473638 0 0" nodeId="76">
+          <TransformGroup name="testAreaWidth1" translation="-0.75 0 1.77636e-17" nodeId="77"/>
+          <TransformGroup name="testAreaHeight1" translation="0 0 -0.577157" nodeId="78"/>
+        </TransformGroup>
+        <TransformGroup name="testAreaStart3" translation="-0.535588 0 0" nodeId="79">
+          <TransformGroup name="testAreaWidth1" translation="-0.75 0 1.77636e-17" nodeId="80"/>
+          <TransformGroup name="testAreaHeight1" translation="0 0 -0.577157" nodeId="81"/>
+        </TransformGroup>
+        <TransformGroup name="testAreaStart4" translation="-1.09708 0 0" nodeId="82">
+          <TransformGroup name="testAreaWidth1" translation="-0.75 0 1.77636e-17" nodeId="83"/>
+          <TransformGroup name="testAreaHeight1" translation="0 0 -0.577157" nodeId="84"/>
+        </TransformGroup>
+        <TransformGroup name="testAreaStart5" translation="-1.64367 0 0" nodeId="85">
+          <TransformGroup name="testAreaWidth1" translation="-0.75 0 1.77636e-17" nodeId="86"/>
+          <TransformGroup name="testAreaHeight1" translation="0 0 -0.577157" nodeId="87"/>
+        </TransformGroup>
+        <TransformGroup name="testAreaStart6" translation="-2.23383 0 0" nodeId="88">
+          <TransformGroup name="testAreaWidth1" translation="-0.75 0 1.77636e-17" nodeId="89"/>
+          <TransformGroup name="testAreaHeight1" translation="0 0 -0.577157" nodeId="90"/>
+        </TransformGroup>
+        <TransformGroup name="testAreaStart7" translation="-2.78457 0 0" nodeId="91">
+          <TransformGroup name="testAreaWidth1" translation="-0.75 0 1.77636e-17" nodeId="92"/>
+          <TransformGroup name="testAreaHeight1" translation="0 0 -0.577157" nodeId="93"/>
+        </TransformGroup>
+        <TransformGroup name="testAreaStart8" translation="-3.3345 0 0" nodeId="94">
+          <TransformGroup name="testAreaWidth1" translation="-0.75 0 1.77636e-17" nodeId="95"/>
+          <TransformGroup name="testAreaHeight1" translation="0 0 -0.577157" nodeId="96"/>
+        </TransformGroup>
+        <TransformGroup name="testAreaStart9" translation="-3.92819 0 0" nodeId="97">
+          <TransformGroup name="testAreaWidth1" translation="-0.75 0 1.77636e-17" nodeId="98"/>
+          <TransformGroup name="testAreaHeight1" translation="0 0 -0.577157" nodeId="99"/>
+        </TransformGroup>
+        <TransformGroup name="testAreaStart10" translation="-4.43054 0 0" nodeId="100">
+          <TransformGroup name="testAreaWidth1" translation="-0.75 0 1.77636e-17" nodeId="101"/>
+          <TransformGroup name="testAreaHeight1" translation="0 0 -0.577157" nodeId="102"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="aiMarkerBack" translation="0 0 -0.95669" nodeId="103"/>
+      <TransformGroup name="groundReferenceNode" translation="0 0.00697378 -0.522714" nodeId="104"/>
+      <TransformGroup name="workAreas" nodeId="105">
+        <TransformGroup name="workAreaStrawStart" translation="2.562 -0.0621118 0.057" nodeId="106"/>
+        <TransformGroup name="workAreaStrawWidth" translation="-2.562 -0.0621118 0.0567572" nodeId="107"/>
+        <TransformGroup name="workAreaStrawHeight" translation="2.562 -0.0621118 -0.520243" nodeId="108"/>
+      </TransformGroup>
+      <TransformGroup name="effect" nodeId="109">
+        <TransformGroup name="effectNodes" nodeId="110">
+          <TransformGroup name="effectCenter" translation="7.0594e-08 -0.3 1.5925" rotation="0 -180 0" nodeId="111"/>
+          <TransformGroup name="effectLeft" translation="2.562 0.636721 -0.752" rotation="90 0 -90" nodeId="112"/>
+          <TransformGroup name="effectRight" translation="-2.562 0.72 -0.752" rotation="90 0 90" nodeId="113"/>
+          <Shape shapeId="12" name="emitEffectParticles" translation="0.188 0.530953 -0.442" rotation="49.8533 0 0" clipDistance="300" nodeId="114" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="13" name="smokeEmitter" translation="-0.00992607 0.468118 0.037" rotation="199.338 0 0" scale="0.347648 1 1" clipDistance="300" nodeId="115" materialIds="12" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+      <Shape shapeId="14" name="Rosca" translation="0 0.385223 -0.660372" nodeId="116" materialIds="17" castsShadows="true" receiveShadows="true"/>
+    </Shape>
+  </Scene>
+
+</i3D>

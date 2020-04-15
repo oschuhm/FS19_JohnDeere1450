@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="cutter">
+    <annotation>Direito Autoral (C) BrunoNH e PedroRossato, Todos os direitos reservados.</annotation>
+    <storeData>
+        <name>
+            <de>TATU PMT 9 Linhas</de>
+            <en>TATU PMT 9 Linhas</en></name>
+        <functions>
+            <function>$l10n_function_cutter</function>
+			
+        </functions>
+        <specs>
+            <workingWidth>5.8</workingWidth>
+			<combination>John Deere 1450</combination>
+        </specs>
+        <image>StoreMilho.dds</image>
+        <price>25000</price>
+        <dailyUpkeep>15</dailyUpkeep>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>Tatu</brand>
+        <category>cornHeaders</category>
+	    <vertexBufferMemoryUsage>1369760</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>183654</indexBufferMemoryUsage>
+        <textureMemoryUsage>10103576</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+	</storeData>
+	
+	<base>
+        <typeDesc>$l10n_typeDesc_cutter</typeDesc>
+        <filename>PMT9.i3d</filename>
+        <size width="4" length="4"/>
+        <speedLimit value="7"/>
+        <components>
+		    <component solverIterationCount="10" mass="600"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0">
+            <default name="DEFAULT_IMPLEMENT"/>
+            <selected name="DEFAULT_IMPLEMENT_SELECTED"/>
+        </schemaOverlay>
+    </base>
+	
+	<powerConsumer ptoRpm="540" neededMaxPtoPower="50"/>
+	 
+	<powerTakeOffs>
+        <input inputNode="0>6" inputAttacherJointIndices="1" aboveAttacher="true" ptoName="LEFT_PTO"/>
+    </powerTakeOffs> 
+	
+	 <workAreas>
+        <workArea type="cutter" functionName="processCutterArea" >
+            <area startNode="0>1" widthNode="0>2" heightNode="0>3" />
+            <groundReferenceNode index="1" />
+            <chopperArea index="2" />
+        </workArea>
+        <workArea type="auxiliary" >
+            <area startNode="0>12|0" widthNode="0>12|1" heightNode="0>12|2" />
+        </workArea>
+    </workAreas>
+	
+	<groundReferenceNodes>
+        <groundReferenceNode node="0>11" threshold="0.4" />
+    </groundReferenceNodes>
+	
+	<attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="0>0" jointType="cutter">
+                <!-- <heightNode node="0>13"/> -->
+                <distanceToGround lower="1.15" upper="2.5"/>
+            </inputAttacherJoint>
+        </inputAttacherJoints>
+        <support animationName="moveSupport" />
+    </attachable>
+	
+	<ai>
+        <areaMarkers leftNode="0>4" rightNode="0>5" backNode="0>10"/>
+        <collisionTrigger node="0>8"/>
+    </ai>
+	
+	<dynamicMount forceLimitScale="1"/>
+	<turnOnVehicle turnedOnByAttacherVehicle="true"/>
+	
+	<cutter fruitTypeCategories="maizeHeader">
+        <testAreas>
+            <testArea startNode="0>9|0" widthNode="0>9|0|0" heightNode="0>9|0|1"/>
+            <testArea startNode="0>9|1" widthNode="0>9|1|0" heightNode="0>9|1|1"/>
+            <testArea startNode="0>9|2" widthNode="0>9|2|0" heightNode="0>9|2|1"/>
+            <testArea startNode="0>9|3" widthNode="0>9|3|0" heightNode="0>9|3|1"/>
+            <testArea startNode="0>9|4" widthNode="0>9|4|0" heightNode="0>9|4|1"/>
+            <testArea startNode="0>9|5" widthNode="0>9|5|0" heightNode="0>9|5|1"/>
+			<testArea startNode="0>9|6" widthNode="0>9|6|0" heightNode="0>9|6|1"/>
+			<testArea startNode="0>9|7" widthNode="0>9|7|0" heightNode="0>9|7|1"/>
+			<testArea startNode="0>9|8" widthNode="0>9|8|0" heightNode="0>9|8|1"/>
+        </testAreas>
+        <effect>
+            <effectNode linkNode="0>13|0|0" inverted="true" speedScale="0.0018" lengthAndRadius="1 3.8 1 3" effectType="CENTER" changeSpeedScale="0.01"/>
+            <effectNode linkNode="0>13|0|1" inverted="true" speedScale="0.0012" lengthAndRadius="3.2 1 1 1" effectType="LEFT" useInterpolation="true" minOffset="5"/>
+            <effectNode linkNode="0>13|0|2" inverted="true" speedScale="0.0012" lengthAndRadius="3.2 1 1 1" effectType="RIGHT" useInterpolation="true" minOffset="5" useMaxValue="true"/>
+        </effect>
+        <fillEffect>
+            <effectNode effectNode="0>13|0|3" effectClass="ParticleEffect" particleType="CUTTER_CHOPPER"/>
+            <effectNode effectClass="ParticleEffect" effectNode="0>13|0|4" particleType="SMOKE" emitCountScale="0.1" worldSpace="false" useCuttingWidth="false"/>
+        </fillEffect>
+        <animationNodes>
+            <animationNode node="0>14" rotSpeed="-800" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+        </animationNodes>
+    </cutter>
+    
+	<wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+	<washable dirtDuration="30" washDuration="1" workMultiplier="4"/>
+    
+</vehicle>

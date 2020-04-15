@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="cutter">
+    <annotation>Direitos autorais(C) BrunoNH e PedroRossato, todos os direitos reservados.</annotation>
+    <storeData>
+        <name>Plataforma JD</name>
+        <specs>
+            <workingWidth>5.8</workingWidth>
+            <combination>John Deere 1450</combination>
+        </specs>
+        <functions>
+            <function>$l10n_function_cutter</function>
+        </functions>
+        <image>StorePlataforma.dds</image>
+        <price>22600</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>JOHNDEERE</brand>
+        <category>cutters</category>
+        <vertexBufferMemoryUsage>770816</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>106788</indexBufferMemoryUsage>
+        <textureMemoryUsage>8388712</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+	
+    <base>
+        <typeDesc>$l10n_typeDesc_cutter</typeDesc>
+        <filename>PlataformaJD.i3d</filename>
+        <size width="5" length="2.5"/>
+        <speedLimit value="10"/>
+        <components>
+            <component centerOfMass="0.04 0.73 0.06" mass="500"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0">
+            <default name="DEFAULT_IMPLEMENT"/>
+            <selected name="DEFAULT_IMPLEMENT_SELECTED"/>
+        </schemaOverlay>
+    </base>
+	
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="0>1" jointType="cutter" upperRotationOffset="0" forceSelectionOnAttach="false">
+                <distanceToGround lower="1.15" upper="2.5"/>
+            </inputAttacherJoint>
+        </inputAttacherJoints>
+    </attachable>
+	
+    <powerConsumer ptoRpm="540" neededMaxPtoPower="45"/>
+	
+	<groundReferenceNodes>
+        <groundReferenceNode node="0>12" threshold="0.4" />
+    </groundReferenceNodes>
+	
+    <workAreas>
+        <workArea type="cutter" functionName="processCutterArea" >
+            <area startNode="0>2" widthNode="0>3" heightNode="0>4"/>
+			<groundReferenceNode index="1" />
+        </workArea>
+    </workAreas>
+	
+    <cylindered>
+        <movingTools>
+            <movingTool node="0>0|0" playSound="true">
+                <controls axis="AXIS_CUTTER_REEL2" invertAxis="true" mouseSpeedFactor="0.9" iconName="REEL_TRANSLATE_Y"/>
+                <rotation rotSpeed="50" rotAcceleration="50" rotMax="20" rotMin="1"/>
+            </movingTool>
+        </movingTools>
+		
+        <sounds>
+            <hydraulic template="DEFAULT_HYDRAULIC_SOUND"/>
+        </sounds>
+    </cylindered>
+	
+	<connectionHoses>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn" node="0>13|0" length="0.7" diameter="0.02" straighteningFactor="0.2" adapterType="NONE">
+            <objectChange node="0>13|0|1" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicOut" node="0>13|1" length="0.7" diameter="0.02" straighteningFactor="0.2" adapterType="NONE">
+            <objectChange node="0>13|1|1" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn" node="0>13|2" length="0.7" diameter="0.02" straighteningFactor="0.2" adapterType="NONE">
+            <objectChange node="0>13|2|1" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+    </connectionHoses>
+	
+    <cutter fruitTypeCategories="grainHeader">
+        <testAreas>
+            <testArea startNode="0>8|0" widthNode="0>8|0" heightNode="0>8|0"/>
+            <testArea startNode="0>8|1" widthNode="0>8|1" heightNode="0>8|1"/>
+            <testArea startNode="0>8|2" widthNode="0>8|2" heightNode="0>8|2"/>
+            <testArea startNode="0>8|3" widthNode="0>8|3" heightNode="0>8|3"/>
+            <testArea startNode="0>8|4" widthNode="0>8|4" heightNode="0>8|4"/>
+            <testArea startNode="0>8|5" widthNode="0>8|5" heightNode="0>8|5"/>
+            <testArea startNode="0>8|6" widthNode="0>8|6" heightNode="0>8|6"/>
+            <testArea startNode="0>8|7" widthNode="0>8|7" heightNode="0>8|7"/>
+        </testAreas>
+		
+        <effect>
+            <effectNode linkNode="0>10|0" speedScale="0.0018" effectType="CENTER" changeSpeedScale="0.01"/>
+            <effectNode linkNode="0>10|1" speedScale="0.0013" lengthAndRadius="2.2 1 1 1" effectType="LEFT" useInterpolation="true" minOffset="4.5"/>
+            <effectNode linkNode="0>10|2" speedScale="0.0013" lengthAndRadius="2.2 1 1 1" effectType="RIGHT" useInterpolation="true" minOffset="4.5" useMaxValue="true"/>
+        </effect>
+     
+        <animationNodes>
+            <animationNode node="0>0|2" rotSpeed="-400" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="9"/>
+            <animationNode node="0>0|0|2" rotSpeed="200" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="9"/>
+        </animationNodes>
+		
+    </cutter>
+	
+	<powerTakeOffs>
+        <input inputNode="0>7" inputAttacherJointIndices="1" aboveAttacher="true" ptoName="LEFT_PTO"/>
+    </powerTakeOffs>
+
+    <turnOnVehicle turnedOnByAttacherVehicle="true">
+        <turnedOnAnimation name="turnedOnAnimation" speedScale="6" turnOnFadeTime="2" turnOffFadeTime="3"/>
+    </turnOnVehicle>
+	
+    <dynamicMount forceLimitScale="1"/>
+	
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="4" fieldMultiplier="2"/>
+	
+    <ai>
+        <areaMarkers leftNode="0>5" rightNode="0>6" backNode="0>9"/>
+        <collisionTrigger node="0>11"/>
+    </ai>
+	
+	<foliageBending>
+        <bendingNode minX="-2.0" maxX="2.0" minZ="-0.9" maxZ="0.6" yOffset="0" />
+    </foliageBending>
+</vehicle>

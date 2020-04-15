@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel>
+    <default>
+        <physics radius="0.93" width="0.52" mass="0.360" tireType="mud" frictionScale="1.60" maxLongStiffness="10" maxLatStiffness="120" maxLatStiffnessLoad="2" />
+        <tire filename="wheels/michelin/Roda.i3d" nodeLeft="2|0" nodeRight="2|0" maxDeformation="0.082" isCareWheel="false" tireTrackAtlasIndex="0" />
+        <innerRim filename="wheels/michelin/Roda.i3d" nodeLeft="2|1" nodeRight="2|2" />
+	</default>
+</wheel>
